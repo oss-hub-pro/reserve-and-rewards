@@ -11,8 +11,6 @@ const Hero = () => {
           src={heroImage} 
           alt="Professional service providers" 
           className="w-full h-full object-cover"
-          loading="eager"
-          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-success/80" />
       </div>

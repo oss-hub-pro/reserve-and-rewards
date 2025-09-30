@@ -13,7 +13,7 @@ const providers = [
     hourlyRate: 85,
     location: "Downtown",
     verified: true,
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=200&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&h=300&fit=crop&crop=face",
     specialties: ["Deep Tissue", "Swedish", "Sports"]
   },
   {
@@ -25,7 +25,7 @@ const providers = [
     hourlyRate: 75,
     location: "Midtown",
     verified: true,
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=200&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=300&fit=crop&crop=face",
     specialties: ["Strength", "HIIT", "Nutrition"]
   },
   {
@@ -37,7 +37,7 @@ const providers = [
     hourlyRate: 50,
     location: "Online",
     verified: true,
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=200&fit=crop&crop=face",
+    image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face",
     specialties: ["Spanish", "French", "English"]
   }
 ];
@@ -61,9 +61,6 @@ const FeaturedProviders = () => {
                   src={provider.image} 
                   alt={provider.name}
                   className="w-full h-48 object-cover"
-                  loading="lazy"
-                  width="400"
-                  height="200"
                 />
                 {provider.verified && (
                   <Badge className="absolute top-3 right-3 bg-success text-success-foreground">
